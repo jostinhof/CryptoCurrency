@@ -1,8 +1,8 @@
 # -*- coding: utf-8 -*-
 """
-Created on Fri Mar 29 16:21:05 2019
+Created on Fri Mar 12 16:21:05 2019
 
-@author: josti
+@author: Jostin Joseph
 """
 
 # Importing pandas
@@ -139,7 +139,7 @@ def capcount(query_string):
 LABELS = ["biggish", "micro", "nano"]
 
 # Using capcount count the biggish cryptos
-biggish = biggish = capcount('market_cap_usd>=10**10')
+biggish = capcount('market_cap_usd>=10**10')
 print(biggish)
 # Same as above for micro ...
 micro = capcount('market_cap_usd>=50*10**6 and market_cap_usd<=300*10**6')
